@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Employee Attrition Prediction</title></head>
+<body>
+    <h2>Enter Employee Details</h2>
+    <form method="POST" action="/predict">
+        Age: <input type="number" name="age"><br>
+        Satisfaction Level (0.1-1.0): <input type="number" step="0.01" name="satisfaction_level"><br>
+        Years at Company: <input type="number" name="years_at_company"><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
