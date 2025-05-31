@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-attrition-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee-attrition
+  template:
+    metadata:
+      labels:
+        app: employee-attrition
+    spec:
+      containers:
+      - name: employee-attrition
+        image: YOUR_DOCKERHUB_USERNAME/employee-attrition:latest
+        ports:
+        - containerPort: 5000
