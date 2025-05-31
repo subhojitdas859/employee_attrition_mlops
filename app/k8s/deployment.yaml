@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: employee-attrition
-        image: YOUR_DOCKERHUB_USERNAME/employee-attrition:latest
+        image: YOUR_DOCKERHUB_USERNAME/employee_attrition:latest
         ports:
         - containerPort: 5000
