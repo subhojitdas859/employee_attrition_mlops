@@ -38,5 +38,5 @@ jobs:
           file: Dockerfile 
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops_final:latest
-            ${{ secrets.DOCKER_HUB_USERNAME }}/mlops_final:${{ github.sha }}
+            ${{ secrets.DOCKER_HUB_USERNAME }}/employee_attrition:latest
+            ${{ secrets.DOCKER_HUB_USERNAME }}/employee_attrition:${{ github.sha }}
