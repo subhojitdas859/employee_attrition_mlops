@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: employee-attrition-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: employee-attrition
   ports:
-  - protocol: TCP
-      port: 80 
-      targetPort: 5000
+  - port: 5000
+    targetPort: 5000
+    nodePort: 30007
